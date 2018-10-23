@@ -1,48 +1,48 @@
 ---
 title: "Introduction to GitHub"
-author: Alexa Fredston-Hermann <br> PhD Student, Bren School <br> fredstonhermann@ucsb.edu
+author: Alexa Fredston-Hermann, PhD Student, Bren School, fredstonhermann@ucsb.edu <br> Elise Wall, Associate Specialist, IEE, ekwall@ucsb.edu <br>
   <br> Special thanks to Dr. Julie Stewart Lowndes who created this presentation
 output:
   ioslides_presentation: default
-  beamer_presentation: default
   slidy_presentation: default
+  beamer_presentation: default
 ---
 ## Does this look familiar? 
 
 <p align = 'center'>![](fig/longfilelist.png)
 
-Do you have a folder on your computer that looks like this?
-
-Do you have a folder of *code* on your computer like this? 
 
 ## Why learn and use GitHub? 
 
-GitHub enables **version control** of projects, so you can track all of your changes clearly and unambiguously, without proliferating files or losing old versions. It's used for many programming languages, although we'll only cover its interface with RStudio. 
+**Version control** Track all of your changes clearly, without breeding files or losing old versions. Used for many programming languages.
 
-This facilitates scientific collaboration because multiple people can work on code together, but is also a fantastic organizational tool for individuals. GitHub allows you to back up code, easily switch between computers, undo mistakes, 'comment' on changes, and much more. 
+## Why learn and use GitHub? 
 
-*You don't need to be proficient in R to understand this workshop!* However, if you want to follow along when we practice in RStudio, please be sure you have an updated version on your laptop. You'll also need an account on [github.com](https://www.github.com/) - feel free to navigate to this repository. Please ask questions as we go along. 
+**Version control** Track all of your changes clearly, without breeding files or losing old versions. Used for many programming languages.
 
-You can read more about why and how to use GitHub from [Hadley Wickham](https://github.com/rstudio/webinars/blob/master/06-Collaboration-and-time-travel-version-control/git-github.pdf), [Karl Broman](http://kbroman.org/github_tutorial/pages/why.html), and [Ben Best](http://htmlpreview.github.io/?https://github.com/eco-data-science/ds-git/blob/gh-pages/index.html). 
-
-## What is GitHub?  
-<!---To view rendered .html files, preappend http://htmlpreview.github.io/? to the url--->
-<!---Make notes or comments that won't be rendered using this syntax--->
-
-[**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes. Great for collaborators and your future self.
+Helps multiple people can work on code together, but is also a fantastic organizational tool for individuals.
+GitHub allows you to back up code, easily switch between computers, undo mistakes, 'comment' on changes, and much more. 
 
 ## What is GitHub?  
+Similar to Dropbox, certain folders on your local computer will be 'watched', with any changes able to be synced online.
 
-[**GitHub**](https://github.com) is an open-source development platform that enables easy collaboration and versioning, which means that all saved versions are archived and attributed to each user. It is possible to revert back to any previous version, which is incredibly useful to not only to document what work has been done, but how it differs from work done in the past, and who is responsible for the changes. Great for collaborators and your future self.
+## What is GitHub?  
+Similar to Dropbox, certain folders on your local computer will be 'watched', with any changes able to be synced online.
 
+You have more control about what is synced, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this presentation!) using any application.
 
-Similar to Dropbox, you have certain folders on your local computer that will be 'watched', with any changes able to be synced online. However, with GitHub, you have more control about what is synced, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this presentation!) using any application. There are many other great features, including a to-do list you can share with collaborators (called Issues). 
+## What is GitHub?  
+Similar to Dropbox, certain folders on your local computer will be 'watched', with any changes able to be synced online.
+
+You have more control about what is synced, and how often. You can store, share, track changes and collaboratively edit many filetypes (including this presentation!) using any application.
+
+It is possible to revert back to any previous version, and who is responsible for line-by-line changes.
+
+Other great features too! (Issues, a to-do list you can share and assign tasks) 
 
 ## git and GitHub
 
 <p align = 'center'>![](fig/git_github.png)
-  
-Git is distinct from GitHub, but this is not the focus today.  
   
 (definition from [GitHub.com](https://guides.github.com/introduction/getting-your-project-on-github))
 
@@ -51,9 +51,7 @@ Git is distinct from GitHub, but this is not the focus today.
 1. GitHub Structure
 2. GitHub Workflow and Vocabulary
 3. RStudio Practice
-4. Non-R Options 
-5. Best Practices
-6. Resources
+4. Resources
 
 ## GitHub Structure
 
@@ -69,7 +67,7 @@ Repositories ('repos') are essentially folders containing files pertaining to a 
 
 Same structure across all orgs/repos: familiar, easy to navigate. 
 
-Here are some examples to explore later on. 
+GitHub is so great for creating and sharing code, lots of things you rely on already use it: 
 
 * **repositories**: [github-intro](https://github.com/eco-data-science/github-intro), [dplyr](https://github.com/hadley/dplyr), [ggplot2]() 
 * **users**: [jules32](https://github.com/jules32), [hadley](https://github.com/hadley), [jennybc](https://github.com/jennybc)
@@ -78,25 +76,43 @@ Here are some examples to explore later on.
 
 ## GitHub Workflow and Vocabulary
 
-Let's discuss how this works first, and then we're going to practice with RStudio. You come across code for an R package that will randomly download 10 dog pictures from the internet given the name of a dog breed. Obviously, you need this on your computer, so you're going to **clone** it. 
+Let's discuss how this works first, and then we're going to practice with RStudio.
 
 ## GitHub Workflow and Vocabulary
 
-* **clone**: download an identical copy - a 'clone' - of a repository to your local computer. Unlike most downloads, cloned repositories can still be synced with the online version(s). 
+Let's discuss how this works first, and then we're going to practice with RStudio.
+
+There are lots of ways you'd get into GitHub... group project, new job, want to contribute to/use someone's neat idea.
+
+![](fig/irrigation.jpg)
+
+
+## GitHub Workflow and Vocabulary
+
+Let's discuss how this works first, and then we're going to practice with RStudio.
+
+There are lots of ways you'd get into GitHub... group project, new job, want to contribute to/use someone's neat idea.
+
+First, it'd be nice if the files were on your computer.
+
+## GitHub Workflow and Vocabulary
+
+* **clone**: download an identical copy - a 'clone' - of a repository to your local computer. Cloned repositories can still be synced with the online version(s) at your whim. 
 
 ![](fig/github_workflow1a.png)
 
 ## GitHub Workflow and Vocabulary
 
-Now that you have a local copy of this package, you edit the code to only download pictures of puppies. When you're at a good stopping point and want to save your progress, you 'commit' the code with an informative message describing the changes for your future self or anyone else who sees this code. 
+Now that you have a local copy of this code, you have some ideas. When you're at a good stopping point and want to save your progress, you 'commit' the code with a message describing the changes. 
 
-I think of commit as the GitHub version of 'save', but you also get to add a comment. 
+Commit = the GitHub version of 'I did a thing!'
+...Like 'save', but you also get to add a comment.
 
 ## GitHub Workflow and Vocabulary
 
 * **commit**: message associated with your changes ([best practices](http://r-pkgs.had.co.nz/git.html#commit-best-practices))
 
-![xkcd](https://imgs.xkcd.com/comics/git_commit.png)
+![xkcd](fig/git_commit.png)
 
 ## GitHub Workflow and Vocabulary
 
@@ -106,7 +122,11 @@ I think of commit as the GitHub version of 'save', but you also get to add a com
 
 ## GitHub Workflow and Vocabulary
 
-But wait! Before you share your newly updated R package with the world, you want to be sure the person who created it hasn't made any changes to the original (bug fixes, for example). To download new changes to the code from others, you 'pull' from GitHub. **This is also how you can switch computers and easily work on the same code.** 
+But wait! What if, in the meantime, someone else changed the original (bug fixes, for example)? To download new changes to the code from others, you 'pull' from GitHub. **This is also how you can switch computers and easily work on the same code.** 
+
+## GitHub Workflow and Vocabulary
+
+But wait! What if, in the meantime, someone else changed the original (bug fixes, for example)? To download new changes to the code from others, you 'pull' from GitHub. **This is also how you can switch computers and easily work on the same code.** 
 
 If there are differences that can be easily resolved (e.g., the R package developer fixed a bug by adding a line of code), your repository will be 'merged' accordingly. If the differences *conflict*, you have to resolve them manually by telling GitHub which changes to keep and which to ignore. 
 
@@ -119,7 +139,7 @@ If there are differences that can be easily resolved (e.g., the R package develo
 
 ## GitHub Workflow and Vocabulary
 
-After committing your changes and pulling the repository again, you're ready to share your puppy image search code from your local computer to GitHub. To do this, you upload - or 'push' - the code. 
+After committing your changes and pulling the repository again, you're ready to 'upload' your version of the code to GitHub. To do this, you 'push' the code. 
 
 * **push**: sync the online repo with your version, only possible after committing
 
@@ -127,7 +147,7 @@ After committing your changes and pulling the repository again, you're ready to 
 
 ## GitHub Workflow: branches
 
-GitHub's branching approach is very intuitive to some people, and not to others. 
+What if you want to try something crazy, but stay organized?
 
 ![](fig/branches_issues.png)
 
@@ -137,7 +157,13 @@ GitHub's branching approach is very intuitive to some people, and not to others.
 
 There are (at least) two ways to work on an existing repository: 
 
-* Clone it and then push and pull directly from the original ('master') - suitable for small group collaborations. 
+* Clone it, then push and pull directly from the original ('master') - suitable for small group collaborations. Create 'branches' for big ideas.
+
+## Github Workflow: branches
+
+There are (at least) two ways to work on an existing repository: 
+
+* Clone it, then push and pull directly from the original ('master') - suitable for small group collaborations. Create 'branches' for big ideas.
 * Create a 'fork' in the branch so that you can make any changes to all of the repository contents without affecting the other branches, such as the master branch. This is suitable for when you just want to copy code, or for very large collaborations. 
 
 ## GitHub Workflow: sync with branch
